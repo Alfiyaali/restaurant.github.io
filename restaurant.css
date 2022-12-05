@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+  .leftdiv{
+    display: flex;
+    background-color: white;
+    top: 0;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 7px 15px -1px rgba(0,0,0,0.75);
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .logo{
+    letter-spacing: 8px;
+    padding: 30px 10px 30px 30px;
+    font-size: 18px;
+  }
+
+  .right-nav{
+    font-size: 18px;
+    letter-spacing: 8px;
+    padding: 30px 20px 30px 10px;
+  }
+
+  .right-nav a:hover{
+    background-color: black;
+    color: wheat;
+    padding: 10px;
+  }
+  
+  .centerdiv {
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .centerdiv img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 60%;
+  }
+  
+  .about{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .about-box{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about1{
+    flex: 50%;
+    padding: 30px;
+  }
+
+  .about2{
+    flex: 50%;  
+  }
+  /***********************Menu****************/
+
+  .menu{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .menu-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu-box-1{
+    flex: 50%;
+    padding: 50px;
+  }
+
+  .menu-box-2{
+    flex: 50%;
+  }
+
+
+  /*****************************************Contact Us********************/
+
+  .contact{
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px;
+  }
+
+  form{
+    margin-top: 30px;
+  }
+  input[type=text], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: vertical;
+  }
+  
+  input[type=number], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: vertical;
+  }
+  
+  
+  input[type=date], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    font-size: 18px;
+    background-color: rgb(218, 211, 211);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    margin-top: 20px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .col-100 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .bottom-image{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: auto;
+    width: 80%;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-100, input[type=submit] {
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+  @media (max-width: 640px) {
+    .right-nav{
+        display: none;
+    }
+
+    .rightdiv{
+        flex-direction: column;
+    }
+
+    .menu-box{
+      flex-direction: column;
+    }
+
+    .about-box{
+      flex-direction: column;
+    }
+  }
